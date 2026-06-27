@@ -388,7 +388,7 @@ function scaleLabel(p){for(const s of SCALE)if(p>=s.min)return s;return SCALE[SC
 /* ---------- Echte Wettkampfdaten aus der hochgeladenen Excel-Datei (260613) ---------- */
 const SEED=[
 {date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Brust",distance:25,course:"SCM",timeSec:27.8},
-{date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Freistil",distance:25,course:"SCM",timeSec:33.0},
+{date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Freistil",distance:25,course:"SCM",timeSec:33},
 {date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Rücken",distance:25,course:"SCM",timeSec:29.2},
 {date:"2025-02-01",meet:"Stützpunktwettkampf Berlin",stroke:"Brust",distance:50,course:"LCM",timeSec:40.06},
 {date:"2025-02-01",meet:"Stützpunktwettkampf Berlin",stroke:"Freistil",distance:50,course:"LCM",timeSec:32.98},
@@ -410,7 +410,7 @@ const SEED=[
 {date:"2025-03-15",meet:"Internationaler WASRA-CUP",stroke:"Lagen",distance:400,course:"LCM",timeSec:368.44},
 {date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Brust",distance:50,course:"LCM",timeSec:38.71},
 {date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Brust",distance:50,course:"LCM",timeSec:39.22},
-{date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Brust",distance:100,course:"LCM",timeSec:87.0},
+{date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Brust",distance:100,course:"LCM",timeSec:87},
 {date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Freistil",distance:50,course:"LCM",timeSec:32.4},
 {date:"2025-04-26",meet:"Berlin Swim Open 2025",stroke:"Lagen",distance:200,course:"LCM",timeSec:163.63},
 {date:"2025-05-10",meet:"Berliner Mai-Mehrkampf",stroke:"Brust",distance:50,course:"LCM",timeSec:50.88},
@@ -442,13 +442,13 @@ const SEED=[
 {date:"2025-10-11",meet:"Überprüfungswettkampf 2025",stroke:"Freistil",distance:1500,course:"SCM",timeSec:1177.3},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Brust",distance:100,course:"SCM",timeSec:84.93},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Brust",distance:200,course:"SCM",timeSec:179.2},
-{date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Freistil",distance:100,course:"SCM",timeSec:66.0},
+{date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Freistil",distance:100,course:"SCM",timeSec:66},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Freistil",distance:400,course:"SCM",timeSec:292.45},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Freistil",distance:800,course:"SCM",timeSec:600.46},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Rücken",distance:100,course:"SCM",timeSec:77.32},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Rücken",distance:200,course:"SCM",timeSec:165.8},
 {date:"2025-11-08",meet:"Berliner Kurzbahnmeisterschaften",stroke:"Schmetterling",distance:100,course:"SCM",timeSec:73.94},
-{date:"2025-11-22",meet:"Norddeutscher Nachwuchsländerkampf der Landesverbände",stroke:"Lagen",distance:100,course:"SCM",timeSec:72.0},
+{date:"2025-11-22",meet:"Norddeutscher Nachwuchsländerkampf der Landesverbände",stroke:"Lagen",distance:100,course:"SCM",timeSec:72},
 {date:"2025-11-22",meet:"Norddeutscher Nachwuchsländerkampf der Landesverbände",stroke:"Lagen",distance:200,course:"SCM",timeSec:154.51},
 {date:"2025-12-19",meet:"Supercup des Berliner TSC",stroke:"Freistil",distance:400,course:"LCM",timeSec:300.3},
 {date:"2025-12-20",meet:"Supercup des Berliner TSC",stroke:"Brust",distance:100,course:"LCM",timeSec:86.52},
@@ -465,13 +465,15 @@ const SEED=[
 {date:"2026-03-22",meet:"Berliner Meisterschaften & JGM",stroke:"Freistil",distance:100,course:"LCM",timeSec:63.3},
 {date:"2026-03-22",meet:"Berliner Meisterschaften & JGM",stroke:"Freistil",distance:200,course:"LCM",timeSec:141.5},
 {date:"2026-03-22",meet:"Berliner Meisterschaften & JGM",stroke:"Freistil",distance:800,course:"LCM",timeSec:596.7},
-{date:"2026-04-18",meet:"Berlin Swim Open 2026",stroke:"Brust",distance:50,course:"LCM",timeSec:38.0},
-{date:"2026-04-18",meet:"Berlin Swim Open 2026",stroke:"Schmetterling",distance:50,course:"LCM",timeSec:31.0},
+{date:"2026-04-18",meet:"Berlin Swim Open 2026",stroke:"Brust",distance:50,course:"LCM",timeSec:38},
+{date:"2026-04-18",meet:"Berlin Swim Open 2026",stroke:"Schmetterling",distance:50,course:"LCM",timeSec:31},
 {date:"2026-04-19",meet:"Berlin Swim Open 2026",stroke:"Freistil",distance:50,course:"LCM",timeSec:29.4},
 {date:"2026-04-19",meet:"Berlin Swim Open 2026",stroke:"Rücken",distance:50,course:"LCM",timeSec:35.6},
-{date:"2026-06-05",meet:"Deutsche Meisterschaften Schwimmerischer Mehrkampf",stroke:"Freistil",distance:100,course:"LCM",timeSec:64.0},
+{date:"2026-06-05",meet:"Deutsche Meisterschaften Schwimmerischer Mehrkampf",stroke:"Freistil",distance:100,course:"LCM",timeSec:64},
 {date:"2026-06-05",meet:"Deutsche Meisterschaften Schwimmerischer Mehrkampf",stroke:"Freistil",distance:400,course:"LCM",timeSec:289.88},
-{date:"2026-06-05",meet:"Deutsche Meisterschaften Schwimmerischer Mehrkampf",stroke:"Lagen",distance:200,course:"LCM",timeSec:153.62}
+{date:"2026-06-05",meet:"Deutsche Meisterschaften Schwimmerischer Mehrkampf",stroke:"Lagen",distance:200,course:"LCM",timeSec:153.62},
+{date:"2026-06-27",meet:"WasRa Cup",stroke:"Freistil",distance:50,course:"LCM",timeSec:29.5},
+{date:"2026-06-27",meet:"WasRa Cup",stroke:"Schmetterling",distance:100,course:"LCM",timeSec:71}
 ];
 function seedResults(){return SEED.map((r,i)=>Object.assign({id:"seed"+i},r));}
 
