@@ -387,9 +387,7 @@ function scaleLabel(p){for(const s of SCALE)if(p>=s.min)return s;return SCALE[SC
 
 /* ---------- Echte Wettkampfdaten aus der hochgeladenen Excel-Datei (260613) ---------- */
 const SEED=[
-{date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Brust",distance:25,course:"SCM",timeSec:27.8},
 {date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Freistil",distance:25,course:"SCM",timeSec:33},
-{date:"2022-03-19",meet:"Sichtungsschwimmen des SLZB Berlin",stroke:"Rücken",distance:25,course:"SCM",timeSec:29.2},
 {date:"2025-02-01",meet:"Stützpunktwettkampf Berlin",stroke:"Brust",distance:50,course:"LCM",timeSec:40.06},
 {date:"2025-02-01",meet:"Stützpunktwettkampf Berlin",stroke:"Freistil",distance:50,course:"LCM",timeSec:32.98},
 {date:"2025-02-01",meet:"Stützpunktwettkampf Berlin",stroke:"Lagen",distance:200,course:"LCM",timeSec:179.2},
@@ -475,7 +473,13 @@ const SEED=[
 {date:"2026-06-27",meet:"WasRa Cup",stroke:"Freistil",distance:50,course:"LCM",timeSec:29.5},
 {date:"2026-06-27",meet:"WasRa Cup",stroke:"Schmetterling",distance:100,course:"LCM",timeSec:71},
 {date:"2026-06-28",meet:"WasRa Cup",stroke:"Brust",distance:50,course:"LCM",timeSec:38.4},
-{date:"2026-06-28",meet:"WasRa Cup",stroke:"Rücken",distance:200,course:"LCM",timeSec:167.5}
+{date:"2026-06-28",meet:"WasRa Cup",stroke:"Rücken",distance:200,course:"LCM",timeSec:167.5},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Brust",distance:200,course:"SCM",timeSec:171.7},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Lagen",distance:200,course:"SCM",timeSec:153.1},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Rücken",distance:50,course:"SCM",timeSec:34.6},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Rücken",distance:200,course:"SCM",timeSec:161.1},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Schmetterling",distance:100,course:"SCM",timeSec:72},
+{date:"2026-10-17",meet:"Neukölln Trophy",stroke:"Schmetterling",distance:200,course:"SCM",timeSec:159.3}
 ];
 function seedResults(){return SEED.map((r,i)=>Object.assign({id:"seed"+i},r));}
 
